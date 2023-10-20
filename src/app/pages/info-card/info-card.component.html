@@ -1,0 +1,23 @@
+<div class="container text-center">
+  <div class="box">
+    <div class="col-md-12 p-3">
+      <span
+        style="color: white; text-align: center !important"
+        [innerHTML]="infoCard.description"
+      ></span>
+    </div>
+    <img [src]="infoCard.imageUrl" alt="" width="100%" />
+  </div>
+</div>
+<div class="overlay">
+  <i
+    (click)="previous()"
+    class="bi bi-arrow-left-circle-fill"
+    style="font-size: 2em; color: white"
+  ></i>
+  <i
+    (click)="next()"
+    class="bi bi-arrow-right-circle-fill"
+    style="font-size: 2em; color: white"
+  ></i>
+</div>
